@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"features\/demo[1:2]","start":1721126722989,"end":1721126723413,"title":"features\/demo[1:2] 16:15:22.989-16:15:23.413 Print Hello World"},{"id":2,"group":2,"content":"features\/demo[2:6]","start":1721126722989,"end":1721126723413,"title":"features\/demo[2:6] 16:15:22.989-16:15:23.413 Declare and print"},{"id":3,"group":3,"content":"features\/demo[3:11]","start":1721126722989,"end":1721126723455,"title":"features\/demo[3:11] 16:15:22.989-16:15:23.455 json reading"},{"id":4,"group":4,"content":"features\/demo[4:28]","start":1721126722989,"end":1721126723455,"title":"features\/demo[4:28] 16:15:22.989-16:15:23.455 Complex Json"},{"id":5,"group":1,"content":"features\/demo[5:57]","start":1721126723437,"end":1721126725486,"title":"features\/demo[5:57] 16:15:23.437-16:15:25.486 Get airline data using ID - Basic assertions"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

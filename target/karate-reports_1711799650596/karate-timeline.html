@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/PostCall[1:7]","start":1711799607753,"end":1711799609226,"title":"src\/test\/java\/features\/PostCall[1:7] 17:23:27.753-17:23:29.226 Make a simple POST request without Authorization Header and validate status code as 201"},{"id":2,"group":1,"content":"src\/test\/java\/features\/PostCall[2:14]","start":1711799609230,"end":1711799610280,"title":"src\/test\/java\/features\/PostCall[2:14] 17:23:29.230-17:23:30.280 Make a POST request  with Authorization Header and validate status code as 201"},{"id":3,"group":1,"content":"src\/test\/java\/features\/PostCall[3:21]","start":1711799610283,"end":1711799610994,"title":"src\/test\/java\/features\/PostCall[3:21] 17:23:30.283-17:23:30.994 Make a POST request using a json file and Validate the response","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

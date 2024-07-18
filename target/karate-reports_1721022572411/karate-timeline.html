@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/sample2[1:2]","start":1721018476929,"end":1721018477088,"title":"features\/sample2[1:2] 10:11:16.929-10:11:17.088 first scenario"},{"id":2,"group":1,"content":"features\/sample2[2:6]","start":1721018477095,"end":1721018477121,"title":"features\/sample2[2:6] 10:11:17.095-10:11:17.121 Declare and print"},{"id":3,"group":1,"content":"features\/sample2[3:10]","start":1721018477125,"end":1721018477202,"title":"features\/sample2[3:10] 10:11:17.125-10:11:17.202 json reading"},{"id":4,"group":1,"content":"features\/sample2[4:24]","start":1721018477207,"end":1721018477217,"title":"features\/sample2[4:24] 10:11:17.207-10:11:17.217 Complex Json"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

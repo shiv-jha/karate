@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/demo[1:2]","start":1721040486162,"end":1721040486410,"title":"features\/demo[1:2] 16:18:06.162-16:18:06.410 Print Hello World"},{"id":2,"group":1,"content":"features\/demo[2:6]","start":1721040486426,"end":1721040486450,"title":"features\/demo[2:6] 16:18:06.426-16:18:06.450 Declare and print"},{"id":3,"group":1,"content":"features\/demo[3:11]","start":1721040486461,"end":1721040486548,"title":"features\/demo[3:11] 16:18:06.461-16:18:06.548 json reading"},{"id":4,"group":1,"content":"features\/demo[4:27]","start":1721040486558,"end":1721040486561,"title":"features\/demo[4:27] 16:18:06.558-16:18:06.561 Complex Json"},{"id":5,"group":1,"content":"features\/demo[5:56]","start":1721040486571,"end":1721040488532,"title":"features\/demo[5:56] 16:18:06.571-16:18:08.532 Get airline data using ID - Basic assertions","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("040a4eab-8ff4-45b8-b4d7-63a56e0a6998",{name:"sjhaq"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.features.Login</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-05-07 10:32:00 am</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>VALID Login</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>INVALID Login</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/Login.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Login to VWO</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">VALID Login</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2821</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref passed">3</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://app.vwo.com/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4">{&quot;username&quot;:&quot;training1@training.com&quot;,&quot;password&quot;:&quot;Training1$&quot;,&quot;remember&quot;:false,&quot;recaptcha_response_field&quot;:&quot;&quot;}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2690</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">10:31:56.912 request:
+1 &gt; POST https://app.vwo.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 108
+1 &gt; Host: app.vwo.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;training1@training.com&quot;,&quot;password&quot;:&quot;Training1$&quot;,&quot;remember&quot;:false,&quot;recaptcha_response_field&quot;:&quot;&quot;}
+
+10:31:59.217 response time in milliseconds: 2286
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Tue, 07 May 2024 05:02:06 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: XSRF-TOKEN=02fddc93eaf176978a3ce149b04600e174ee1dbd; Max-Age=1715065326000; Expires=Wed, 09 Aug 56372 08:01:59 GMT; Domain=app.vwo.com; Secure
+1 &lt; Set-Cookie: vwo=eyJ1c2VySWQiOiIxMjI4MDU0IiwiYWNjb3VudElkIjoiODg3NTQyIiwidG9rZW4iOiIxa2hNNWJSNHVsZm9JV2k2dnM5Mmxyekk0a3FrcTNnMnRyNEhickkwYklZcEV0aFpHSmVyTmZaV3p5SVBZd1dpcjBSR21hVk5JWVNOOUhHNnotN1VOZyIsInZhbGlkaXR5IjoiNzIwMCIsInZlcnNpb24iOjEsImhhc2giOiJlYzc3NDE3MDBkMjViMTRkYzI3ZmY5ZWYwOGI2MDI3MGE4MGEwNzNiIn0%3D; Max-Age=1715065326000; Expires=Wed, 09 Aug 56372 08:01:59 GMT; Domain=app.vwo.com; Secure
+1 &lt; Set-Cookie: vwo_ca=887542; Max-Age=1715065326000; Expires=Wed, 09 Aug 56372 08:01:59 GMT; Domain=app.vwo.com; Secure
+1 &lt; Set-Cookie: vwo_logged_in=1; Max-Age=1715065326000; Expires=Wed, 09 Aug 56372 08:01:59 GMT; Domain=vwo.com
+{&quot;id&quot;:1228054,&quot;name&quot;:&quot;Trainer trainer&quot;,&quot;email&quot;:&quot;training1@training.com&quot;,&quot;accountId&quot;:887542,&quot;isDemoAccount&quot;:false,&quot;shouldSeeOnboarding&quot;:true,&quot;isPasswordSet&quot;:true,&quot;isAccountVerified&quot;:false,&quot;shouldSeeReportStatsModal&quot;:true,&quot;shouldSeeCreationStatsModal&quot;:true,&quot;shouldSeeFormAnalysisTour&quot;:true,&quot;shouldSeeVisitorRecordingsTour&quot;:true,&quot;shouldSeeNewHeatmapTour&quot;:true,&quot;shouldSeePlanLayerTour&quot;:true,&quot;shouldSeeNewPlatformWalkthrough&quot;:false,&quot;newDashboardNotificationData&quot;:null,&quot;newReportingSettings&quot;:null,&quot;createdOn&quot;:1715054854,&quot;lastLogin&quot;:1715058126,&quot;phone&quot;:&quot;+919801810109&quot;,&quot;country&quot;:&quot;&quot;,&quot;location&quot;:&quot;India&quot;,&quot;currentIp&quot;:&quot;136.185.121.113&quot;,&quot;policy&quot;:{&quot;id&quot;:4,&quot;name&quot;:&quot;Owner&quot;,&quot;ruleset&quot;:{&quot;canBrowse&quot;:true,&quot;canDesign&quot;:true,&quot;canPublish&quot;:true,&quot;isAdmin&quot;:true,&quot;isOwner&quot;:true}},&quot;accounts&quot;:[{&quot;id&quot;:887542,&quot;mainAccountId&quot;:887542,&quot;name&quot;:&quot;Training&quot;,&quot;isMainAccount&quot;:true,&quot;isAgencyAccount&quot;:false,&quot;isLinkedAccount&quot;:false,&quot;isCROPlatformEnabled&quot;:true,&quot;isSecondary&quot;:false,&quot;relatedAccount&quot;:true,&quot;accountTwoFactorAuthenticationEnabled&quot;:false}],&quot;isActive&quot;:true,&quot;imageUrl&quot;:&quot;\/\/gravatar.com\/avatar\/c618a634ac60466c43df0be1b424857d?s=24&amp;d=https%3A%2F%2Fapp.vwo.com%2Fassets%2Fimages%2Favatar-new-3.png&quot;,&quot;appVersion&quot;:3,&quot;isHttpsOnly&quot;:false,&quot;locale&quot;:null,&quot;intercomHash&quot;:&quot;d06d8652095a4648480d238c8b29ea80434eb6826a02e281ae64a03ddcc899f1&quot;,&quot;lastSeen&quot;:1715058126,&quot;userTwoFactorAuthenticationEnabled&quot;:false,&quot;isSamlEnabled&quot;:false,&quot;twoFactorAuthenticationMethod&quot;:&quot;email&quot;,&quot;pushcrewNotificationId&quot;:null,&quot;shouldSeeCROOptInModal&quot;:false,&quot;shouldSeeVerificationSuccess&quot;:false,&quot;openAiConsentReceived&quot;:false,&quot;isPushcrewDemoRequested&quot;:false,&quot;showDacdnConfig&quot;:false,&quot;currentAccount&quot;:{&quot;id&quot;:887542,&quot;timezone&quot;:&quot;GMT&quot;,&quot;timezoneOffset&quot;:&quot;+00:00&quot;,&quot;isTrial&quot;:true,&quot;isEnabled&quot;:true,&quot;disabledReason&quot;:null,&quot;isMainAccount&quot;:true,&quot;daysRemaining&quot;:29,&quot;isExpired&quot;:false,&quot;policy&quot;:{&quot;ruleset&quot;:{&quot;canCreateLogins&quot;:{&quot;usage&quot;:1,&quot;limit&quot;:-1},&quot;canCreateSubAccounts&quot;:{&quot;usage&quot;:0,&quot;limit&quot;:0},&quot;canCreateCampaignGroup&quot;:{&quot;usage&quot;:0,&quot;limit&quot;:0},&quot;canCreateCustomVisitorProperties&quot;:{&quot;usage&quot;:0,&quot;limit&quot;:0},&quot;planType&quot;:&quot;free&quot;,&quot;combinationInfo&quot;:null,&quot;productsEnabled&quot;:{},&quot;evaluationAvailed&quot;:[],&quot;quotaAllocation&quot;:null,&quot;nonFixedContract&quot;:true,&quot;unlimitedPlan&quot;:null,&quot;overUsage&quot;:null,&quot;isGrandfatheredPlan&quot;:false,&quot;starterActivationDate&quot;:[],&quot;starterDeactivationDate&quot;:[],&quot;overallUsers&quot;:-1,&quot;attributesList&quot;:false,&quot;opsRecordingLinking&quot;:false,&quot;visitorRecordingsStruggleBehavior&quot;:false,&quot;includeExcludeSetting&quot;:false,&quot;testingRetentionDays&quot;:-1,&quot;deployRetentionDays&quot;:-1}},&quot;hashes&quot;:{&quot;upload&quot;:&quot;26ea6ae64daae822c82dd90a55d87d8bdd423711&quot;,&quot;tinyBrowser&quot;:&quot;be4ab3cd5c1952f8ac44d0a4007f93b0&quot;,&quot;preview&quot;:&quot;24000a864c399190d43ae7dd0a0b5bb3&quot;,&quot;heatmap&quot;:&quot;47f0e66e38e6a8ac46199039f1c15300&quot;},&quot;usabilityCredits&quot;:0,&quot;currency&quot;:&quot;USD&quot;,&quot;isEnterprise&quot;:false,&quot;isGrandfathered&quot;:false,&quot;hasRequestedCancellation&quot;:false,&quot;isChatEnabled&quot;:true,&quot;isIncCustomer&quot;:false,&quot;isVwoAccessAllowed&quot;:true,&quot;showConversionPercentage&quot;:false,&quot;isSamlEnabled&quot;:false,&quot;isModifiedSessionDuration&quot;:false,&quot;passwordExpirationEnabled&quot;:false,&quot;isCROPlatformEnabled&quot;:true,&quot;isV4Plan&quot;:true,&quot;isV3Account&quot;:false,&quot;planType&quot;:&quot;free&quot;,&quot;daysRemainingInGracePeriod&quot;:0,&quot;areProductsExpiredExceptDeploy&quot;:false,&quot;accountStatus&quot;:&quot;ENABLED&quot;,&quot;accountTwoFactorAuthenticationEnabled&quot;:false,&quot;dataLocation&quot;:&quot;US&quot;,&quot;canPurchaseEngage&quot;:true,&quot;isAnnotationEnabled&quot;:true,&quot;isEditorCopyPasteEnabled&quot;:true,&quot;isSmartHtmlEditEnabled&quot;:true,&quot;isNewCancellationInterfaceEnabled&quot;:true,&quot;isNewOnboardTrialEnabled&quot;:false,&quot;isChangelogEnabled&quot;:true,&quot;isOnPageSurveyEnabled&quot;:false,&quot;isIntercomEnabled&quot;:true,&quot;isAPIv2Enabled&quot;:false,&quot;isBayesianEnabled&quot;:true,&quot;isJapaneseEnabled&quot;:true,&quot;isVwoProServiceEnabled&quot;:true,&quot;isSurveyHideVwoLogoEnabled&quot;:false,&quot;isIndieOPSEnabled&quot;:true,&quot;isEditorCombinedMoveResizeEnabled&quot;:true,&quot;isCodeEditorEnabled&quot;:true,&quot;isOnSiteAnalysisEnabled&quot;:false,&quot;isEditorFullBodyRearrangeEnabled&quot;:true,&quot;isGlobalCodeEnabled&quot;:true,&quot;isEditorInlineEditEnabled&quot;:true,&quot;isMobileJSONTestingEnabled&quot;:false,&quot;isSkipEditorEnabled&quot;:true,&quot;isPlanLayerEnabled&quot;:true,&quot;isTrackLayerEnabled&quot;:true,&quot;isAnalyzeHeatmapEnabled&quot;:true,&quot;isAnalyzeRecordingEnabled&quot;:true,&quot;isAnalyzeFormAnalysisEnabled&quot;:true,&quot;isCSRFProtectionEnabled&quot;:true,&quot;isTrackPSEnabled&quot;:true,&quot;isCustomDimensionEnabled&quot;:false,&quot;isServerSideTestingEnabled&quot;:false,&quot;isMetaFeatureEnabled&quot;:false,&quot;isCRODashboardEnabled&quot;:true,&quot;isCROSetupEnabled&quot;:true,&quot;isCROOptInEnabled&quot;:false,&quot;isNewDataLayerEnabled&quot;:true,&quot;isSavedSegmentEnabled&quot;:true,&quot;isCRORollOutEnabled&quot;:true,&quot;isEmailNotificationForWinnersEnabled&quot;:true,&quot;isConversionTrackingEnabled&quot;:false,&quot;isAutoDetectPIIEnabled&quot;:true,&quot;isEditifyEnabled&quot;:true,&quot;isQuotaAllocationEnabled&quot;:false,&quot;isResearchIncludeExcludeURLEnabled&quot;:false,&quot;isSegmentorServiceEnabled&quot;:true,&quot;isSegmentSettingsEnabled&quot;:true,&quot;isBehaviourTriggersEnabled&quot;:true,&quot;isShowConversionPercentageEnabled&quot;:false,&quot;isHTTPSOnlyProxyEnabled&quot;:true,&quot;isABReadFromPostgresEnabled&quot;:true,&quot;isABWriteToPostgresEnabled&quot;:true,&quot;isSurveyLinkingEnabled&quot;:true,&quot;isSurveyLogicEnabled&quot;:true,&quot;isCampaignGroupEnabled&quot;:true,&quot;isBayesianGraphRangesEnabled&quot;:true,&quot;isEditorEditAttributesOperationEnabled&quot;:true,&quot;isNewReportingEnabled&quot;:true,&quot;isGeoIP2Enabled&quot;:true,&quot;isFunnelCompletionEnabled&quot;:false,&quot;isEditorMobileSwitcherEnabled&quot;:true,&quot;isEditorEditElementOperationEnabled&quot;:true,&quot;isEditorAddElementOperationEnabled&quot;:true,&quot;isSupportWidgetEnabled&quot;:true,&quot;isSSOEnabled&quot;:false,&quot;isMABEnabled&quot;:false,&quot;isEditorAddWidgetEnabled&quot;:false,&quot;isWhitelistingEnabled&quot;:false,&quot;isCampaignServiceEnabled&quot;:false,&quot;isEditorMinificationEnabled&quot;:false,&quot;isPersonalizationEnabled&quot;:false,&quot;isAssetsSnapshottingEnabled&quot;:true,&quot;isVisitorRecordingsStruggleBehaviorEnabled&quot;:true,&quot;isEditorWidgetTriggersEnabled&quot;:true,&quot;isEditorTextSuggestionsEnabled&quot;:true,&quot;isCompareSegmentsEnabled&quot;:false,&quot;isReportDimensionsEnabled&quot;:true,&quot;isAttributesListEnabled&quot;:false,&quot;isEditorTemplatingEnabled&quot;:true,&quot;isEditorVersioningEnabled&quot;:true,&quot;isEventArchitectureEnabled&quot;:true,&quot;isDACDNWebHookEnabled&quot;:true,&quot;isEditorElementGroupingEnabled&quot;:true,&quot;isBayesianEstimationCalculatorEnabled&quot;:true,&quot;isSaberEnabled&quot;:false,&quot;isDacdnEventsEnabled&quot;:false,&quot;isConfiguratorEnabled&quot;:false,&quot;isIntegrationsV2Enabled&quot;:true,&quot;isEditorLoadCookieFallbackEnabled&quot;:false,&quot;isEditorMultipageModeEnabled&quot;:true,&quot;isEditorRefreshElementsObserverEnabled&quot;:true,&quot;isNewCampaignWarningEnabled&quot;:true,&quot;isEditorChangesetsEnabled&quot;:false,&quot;isEditorDomFootprintRefreshEnabled&quot;:false,&quot;isEventSegmentationEnabled&quot;:true,&quot;isEnvironmentLevelReportingEnabled&quot;:true,&quot;isReactCompatibleOperationsEnabled&quot;:true,&quot;isEditorCCSkipAntiFlickerScriptEnabled&quot;:false,&quot;isMultiAccountAccessEnabled&quot;:true,&quot;isServerSideMegEnabled&quot;:false,&quot;isShadowDomServiceEnabled&quot;:false,&quot;isEditorSelectSimilarElementsEnabled&quot;:false,&quot;isSupportAutomationActionsEnabled&quot;:true,&quot;isEditorMultiDeviceModeEnabled&quot;:true,&quot;isFullStackUserListEnabled&quot;:false,&quot;isEnvironmentLevelWebhookEnabled&quot;:false,&quot;isTwoFactorAuthenticationEnabled&quot;:true,&quot;isMultiUserEditWarningEnabled&quot;:true,&quot;isMABCampaignEnabled&quot;:false,&quot;isEditorSSRDelayApplyingChangesEnabled&quot;:false,&quot;isNewMobileEditorEnabled&quot;:true,&quot;isEditorSelectorPathExclusionEnabled&quot;:true,&quot;isVueCompatibleOperationsEnabled&quot;:false,&quot;isSlackIntegrationEnabled&quot;:true,&quot;isPageUrlFieldAdditionEnabled&quot;:false,&quot;isSixSenseSegmentEnabled&quot;:true,&quot;isEditorDirectPreviewEnabled&quot;:true,&quot;isEulerianIntegrationEnabled&quot;:false,&quot;isPegasusServiceEnabled&quot;:true,&quot;isRuleBasedPersonalizationEnabled&quot;:true,&quot;isSplitTargettingEnabled&quot;:false,&quot;isEventArchPartiallyEnabled&quot;:false,&quot;isKlaviyoIntegrationEnabled&quot;:false,&quot;isPageGroupEnabled&quot;:true,&quot;isMarketoIntegrationEnabled&quot;:true,&quot;isSPARevertOperationsEnabled&quot;:true,&quot;isCDPProEnabled&quot;:false,&quot;isCDPEnterpriseEnabled&quot;:false,&quot;isLazyDOMMutationHandlingEnabled&quot;:false,&quot;isValidatorNotEnabled&quot;:false,&quot;isCustomVariableNumOperatorEnabled&quot;:true,&quot;isHistoricalTargetingEnabled&quot;:false,&quot;isMobileMegEnabled&quot;:false,&quot;isHeatmapRecordingsEnabled&quot;:false,&quot;isOnboardingVersion3Enabled&quot;:false,&quot;isHeatmapNavigationEnabled&quot;:false,&quot;isGlobalTriggersFeatureEnabled&quot;:true,&quot;isSmartcodeVersion1Enabled&quot;:true,&quot;isNewCampaignFlowEnabled&quot;:true,&quot;isGA4AudienceEnabled&quot;:true,&quot;isCustomCssElementHidingEnabled&quot;:true,&quot;isMobileMegWeightsAndPriorityEnabled&quot;:false,&quot;isCombinedListViewEnabled&quot;:false,&quot;isFSMegWeightsAndPriorityEnabled&quot;:true,&quot;isMobile360Enabled&quot;:true,&quot;isServerNewBucketingEnabled&quot;:true,&quot;isSegmentIntegrationEnabled&quot;:true,&quot;isReportingV2Enabled&quot;:false,&quot;isBounceRateEventEnabled&quot;:true,&quot;isGa4SingleCallEnabled&quot;:false,&quot;isAdblockerEnabled&quot;:true,&quot;isSurveyAIEnabled&quot;:false,&quot;isRestrictedCampaignUpdateEnabled&quot;:false,&quot;isSurveyPostSegmentationEnabled&quot;:true,&quot;isFsPreSegmentMetricsConditionEnabled&quot;:false,&quot;isNewCampaignFlowOptOutEnabled&quot;:false,&quot;isGlassboxEnabled&quot;:true,&quot;isIdeaGenerationEnabled&quot;:true,&quot;isInsightsDashboardEnabled&quot;:true,&quot;isHotjarEnabled&quot;:false,&quot;isClarityEnabled&quot;:true,&quot;isServerNewBucketingV2Enabled&quot;:true,&quot;isCrashlyticsIntegrationEnabled&quot;:false,&quot;isServerSideVariationWhitelistingEnabled&quot;:false,&quot;isZoomInfoEnabled&quot;:true,&quot;isCanonicalMultiSegmentEnabled&quot;:false,&quot;isPianoEnabled&quot;:true,&quot;isTextBasedSelectorEnabled&quot;:true,&quot;isHeatmapAiInsightsEnabled&quot;:false,&quot;isNewFormatDetailedCsvEnabled&quot;:false,&quot;isAcquiaDamEnabled&quot;:true,&quot;isEditorAiConversationEnabled&quot;:false,&quot;isHeapSegmentIntegrationEnabled&quot;:true,&quot;isHubspotInsightsIntegrationEnabled&quot;:false,&quot;isShowUsageForSubAccountsEnabled&quot;:false,&quot;isInsightsSamplingEnabled&quot;:false,&quot;isCodeBlockEditorEnabled&quot;:false,&quot;isShopifyEventIntegrationEnabled&quot;:false,&quot;isThreadsEnabled&quot;:false,&quot;isSurveyEventFeatureEnabled&quot;:false,&quot;isSegmentCopilotEnabled&quot;:false,&quot;isServerFeatureFlagEnabled&quot;:false,&quot;abReadPGEnabledDate&quot;:1715054859,&quot;abWritePGEnableDate&quot;:1715054859,&quot;deploymentsEnableDate&quot;:1715054860,&quot;environmentLevelReportingEnableDate&quot;:1672531200,&quot;isAgencyAccount&quot;:false,&quot;hasPrimaryHeatmapEnabled&quot;:false,&quot;hasPrimaryHeatmapConfigured&quot;:false,&quot;hasPrimaryRecordingEnabled&quot;:false,&quot;hasPrimaryRecordingConfigured&quot;:false,&quot;hasPrimaryMobileRecordingEnabled&quot;:false,&quot;hasPrimaryMobileRecordingConfigured&quot;:false,&quot;hasOptedIntoNewCampaignFlow&quot;:true,&quot;hasEnabledNewCampaignFlow&quot;:true,&quot;shouldSeeVWOSetup&quot;:true,&quot;isUserSetupUpgraded&quot;:false,&quot;sfAccountOwner&quot;:null,&quot;createdOn&quot;:1715054854,&quot;trialDuration&quot;:30,&quot;trialQuotaToAssign&quot;:{&quot;insights&quot;:10000,&quot;testing&quot;:10000},&quot;campaignsInAGroupLimit&quot;:30,&quot;isMobileInsightsEnabled&quot;:false},&quot;sfTerritory&quot;:null,&quot;planLayerEnabledOn&quot;:1715054854,&quot;planLayerServerSideEnabledOn&quot;:1588926600,&quot;proxyToken&quot;:&quot;8db4e555666a88d582226302b306d03a562f9451&quot;,&quot;playerToken&quot;:&quot;eyJ1c2VySWQiOiIxMjI4MDU0IiwiYWNjb3VudElkIjoiODg3NTQyIiwiaW1wZXJzb25hdG9ySWQiOm51bGwsInRva2VuIjoiMWtoTTViUjR1bGZvSVdpNnZzOTJscnpJNGtxa3EzZzJ0cjRIYnJJMGJJWXBFdGhaR0plck5mWld6eUlQWXdXaXIwUkdtYVZOSVlTTjlIRzZ6LTdVTmciLCJoYXNoIjoiMDkzNDI5OTMyMDhkMjRhYTEyZjlmZmExNjViMDRjMjE5OGFhYjg0MSJ9&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cookieValue = responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print cookieValue</span>
+      </div>
+    </div>
+    <div class="time-cell passed">48</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">10:31:59.284 [print] {
+  &quot;vwo_ca&quot;: {
+    &quot;path&quot;: null,
+    &quot;domain&quot;: &quot;app.vwo.com&quot;,
+    &quot;name&quot;: &quot;vwo_ca&quot;,
+    &quot;max-age&quot;: 1715065326000,
+    &quot;httponly&quot;: false,
+    &quot;secure&quot;: true,
+    &quot;value&quot;: &quot;887542&quot;,
+    &quot;wrap&quot;: false
+  },
+  &quot;vwo_logged_in&quot;: {
+    &quot;path&quot;: null,
+    &quot;domain&quot;: &quot;vwo.com&quot;,
+    &quot;name&quot;: &quot;vwo_logged_in&quot;,
+    &quot;max-age&quot;: 1715065326000,
+    &quot;httponly&quot;: false,
+    &quot;secure&quot;: false,
+    &quot;value&quot;: &quot;1&quot;,
+    &quot;wrap&quot;: false
+  },
+  &quot;XSRF-TOKEN&quot;: {
+    &quot;path&quot;: null,
+    &quot;domain&quot;: &quot;app.vwo.com&quot;,
+    &quot;name&quot;: &quot;XSRF-TOKEN&quot;,
+    &quot;max-age&quot;: 1715065326000,
+    &quot;httponly&quot;: false,
+    &quot;secure&quot;: true,
+    &quot;value&quot;: &quot;02fddc93eaf176978a3ce149b04600e174ee1dbd&quot;,
+    &quot;wrap&quot;: false
+  },
+  &quot;vwo&quot;: {
+    &quot;path&quot;: null,
+    &quot;domain&quot;: &quot;app.vwo.com&quot;,
+    &quot;name&quot;: &quot;vwo&quot;,
+    &quot;max-age&quot;: 1715065326000,
+    &quot;httponly&quot;: false,
+    &quot;secure&quot;: true,
+    &quot;value&quot;: &quot;eyJ1c2VySWQiOiIxMjI4MDU0IiwiYWNjb3VudElkIjoiODg3NTQyIiwidG9rZW4iOiIxa2hNNWJSNHVsZm9JV2k2dnM5Mmxyekk0a3FrcTNnMnRyNEhickkwYklZcEV0aFpHSmVyTmZaV3p5SVBZd1dpcjBSR21hVk5JWVNOOUhHNnotN1VOZyIsInZhbGlkaXR5IjoiNzIwMCIsInZlcnNpb24iOjEsImhhc2giOiJlYzc3NDE3MDBkMjViMTRkYzI3ZmY5ZWYwOGI2MDI3MGE4MGEwNzNiIn0%3D&quot;,
+    &quot;wrap&quot;: false
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">INVALID Login</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>752</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://app.vwo.com/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.15">{&quot;username&quot;:&quot;training1@trainingxyz.com&quot;,&quot;password&quot;:&quot;Training1$&quot;,&quot;remember&quot;:false,&quot;recaptcha_response_field&quot;:&quot;&quot;}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">751</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">10:31:59.293 request:
+1 &gt; POST https://app.vwo.com/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 111
+1 &gt; Host: app.vwo.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;training1@trainingxyz.com&quot;,&quot;password&quot;:&quot;Training1$&quot;,&quot;remember&quot;:false,&quot;recaptcha_response_field&quot;:&quot;&quot;}
+
+10:32:00.042 response time in milliseconds: 748
+1 &lt; 401
+1 &lt; Server: nginx
+1 &lt; Date: Tue, 07 May 2024 05:02:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 26
+1 &lt; Pragma: no-cache
+1 &lt; Expires: Mon, 01 Jan 1970 00:00:00 UTC
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, s-maxage=0, must-revalidate, pre-check=0, post-check=0
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Via: 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Set-Cookie: vwola=2; Domain=app.vwo.com
+{&quot;message&quot;:&quot;Invalid User&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

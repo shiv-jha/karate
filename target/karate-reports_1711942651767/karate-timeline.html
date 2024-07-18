@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3}];
+var items = [{"id":1,"group":1,"content":"features\/sample2[1:2]","start":1711801083291,"end":1711801083464,"title":"features\/sample2[1:2] 17:48:03.291-17:48:03.464 first scenario"},{"id":2,"group":2,"content":"features\/sample2[2:6]","start":1711801083291,"end":1711801083463,"title":"features\/sample2[2:6] 17:48:03.291-17:48:03.463 Declare and print"},{"id":3,"group":3,"content":"features\/sample2[3:10]","start":1711801083291,"end":1711801083505,"title":"features\/sample2[3:10] 17:48:03.291-17:48:03.505 json reading"},{"id":4,"group":2,"content":"features\/sample2[4:24]","start":1711801083478,"end":1711801083513,"title":"features\/sample2[4:24] 17:48:03.478-17:48:03.513 Complex Json"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
